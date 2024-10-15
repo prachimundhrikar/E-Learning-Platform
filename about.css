@@ -1,0 +1,165 @@
+body {
+    font-family:'Times New Roman', Times, serif;
+    margin: 0;
+    padding: 0;
+    background-color: #EBD3F8;
+}
+
+.navbar {
+    display: flex;
+    background-color: #2E073F;
+    justify-content: space-between;
+    padding: 14px 20px;
+    
+}
+
+.navbar a {
+    color: white;
+    text-decoration: none;
+    padding: 14px 20px;
+}
+
+.navbar a:hover {
+    background-color: #E32249;
+    border-radius: 5px;
+}
+
+.navbar .logo {
+    font-size: 1.5em;
+    font-weight: bold;
+}
+
+.navbar .nav-links {
+    display: flex;
+    gap: 15px;
+}
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+.dropbtn {
+    color: #E32249;
+    text-decoration: none;
+    padding: 14px 20px;
+    display: inline-block;
+}
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #2E073F;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+}
+
+.dropdown-content a {
+    color: white;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown-content a:hover {
+    background-color: #E32249;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.dropdown:hover .dropbtn {
+    background-color: #E32249;
+}
+
+.submenu {
+    position: relative;
+}
+
+.submenu-content {
+    display: none;
+    position: absolute;
+    left: 100%;
+    top: 0;
+    background-color: #2E073F;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+}
+
+.submenu:hover .submenu-content {
+    display: block;
+}
+.about-container {
+    padding: 50px 20px;
+    background-color: #2E073F;
+    max-width: 1200px;
+    margin: 50px auto;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.about-header {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.about-header h1 {
+    font-size: 36px;
+    color: #FFDC7F;
+}
+
+.about-header p {
+    font-size: 18px;
+    color: white;
+}
+
+.about-content {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+
+.about-section h2 {
+    font-size: 28px;
+    color: #FFDC7F;
+    margin-bottom: 15px;
+}
+
+.about-section p,
+.about-section ul {
+    font-size: 16px;
+    color: white;
+    line-height: 1.6;
+}
+
+.about-section ul {
+    padding-left: 20px;
+}
+
+.about-section ul li {
+    margin-bottom: 10px;
+}
+@media screen and (max-width: 768px) {
+    .navbar {
+        flex-direction: column;
+        align-items: center;
+     }
+    
+        .navbar .nav-links {
+            flex-direction: column;
+            width: 100%;
+            text-align: center;
+        }
+    
+        .navbar a {
+            width: 100%;
+        }
+    .dropdown-content {
+            position: relative;
+        }
+    .submenu-content {
+        position: relative;
+        left: auto;
+        top: auto;
+    }
+    }

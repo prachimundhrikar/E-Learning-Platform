@@ -1,0 +1,526 @@
+<!DOCTYPE html>
+<html> 
+    <head> 
+        <meta charset="UTF-8">
+	    <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>
+            SmartSkills
+        </title>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css">
+        <link rel="icon" type="image/png" sizes="16x16" href="C:\Users\ASUS\OneDrive\Desktop\Training Platform\Assets\favicon.ico">
+        <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+        <link rel="stylesheet" href="C:\Users\ASUS\OneDrive\Desktop\Training Platform\CSS\style.css" />
+        
+        <script>
+            $(document).ready(function(){
+                $(".owl-carousel").owlCarousel({
+                    loop: true,
+                    margin: 10,
+                    nav: true,
+                    responsive: {
+                        0: {
+                            items: 1
+                        },
+                        600: {
+                            items: 2
+                        },
+                        1000: {
+                            items: 3
+                        }
+                    }
+                });
+            });
+        </script>
+    </head>
+    <body>
+        <div class="navbar">
+            <div class="logo">
+                <a href="#">SmartSkills</a>
+            </div>
+            <form class="search-form" action="search_results.php" method="GET">
+                <input type="text" name="query" placeholder="Search..." required>
+                <button type="submit">Search</button>
+            </form>
+            <div class="nav-links">
+                <a href="#">Home</a>
+
+                <div class="dropdown">
+                    <a href="#" class="dropbtn">Categories</a>
+                    <div class="dropdown-content">
+
+                        <div class="submenu">
+                        <a href="#">Business</a>
+                            <div class="submenu-content">
+                                <a href="#">Entrepreneurship</a>
+                                <a href="#">Communication</a>
+                                <a href="#">Management</a>
+                                <a href="#">Sales</a>
+                                <a href="#">Business Strategy</a>
+                                <a href="#">Operations</a>
+                                <a href="#">Project Management</a>
+                                <a href="#">Business Law</a>
+                                <a href="#">E-Commerce</a>
+                                <a href="#">Business Analytics & Intelligence</a>
+                                <a href="#">Human Resources</a>
+                                <a href="#">Industry</a>
+                                <a href="#">Real Estate</a>
+                                <a href="#">Media</a>
+                            </div>
+                        </div>
+                        <div class="submenu">
+                        <a href="#">Development</a>
+                            <div class="submenu-content">
+                            <a href="#">Web Development</a>
+                            <a href="#">Data Science</a>
+                            <a href="#">Mobile Development</a>
+                            <a href="#">Programming Languages</a>
+                            <a href="#">Game Development</a>
+                            <a href="#">Database Design & Development</a>
+                            <a href="#">Software Testing</a>
+                            <a href="#">Software Engineering</a>
+                            <a href="#">Software Development Tools</a>
+                            <a href="#">No-Code Development</a>
+                            </div>
+                    </div>
+                    <div class="submenu">
+                        <a href="#">IT & Software</a>
+                        <div class="submenu-content">
+                        <a href="#">IT Certifications</a>
+                        <a href="#">Network & Security</a>
+                        <a href="#">Hardware</a>
+                        <a href="#">Operating Systems & Servers</a>
+                        <a href="#">Other IT & Software</a>
+                    </div>
+                </div>
+                <div class="submenu">
+                        <a href="#">Finance & Accounting</a>
+                        <div class="submenu-content">
+                        <a href="#">Accounting & Bookkeeping</a>
+                        <a href="#">Compliance</a>
+                        <a href="#">Cryptocurrency & Blockchain</a>
+                        <a href="#">Economics</a>
+                        <a href="#">Finance</a>
+                        <a href="#">Financial Modeling & Analysics</a>
+                        <a href="#">Investing & Trading</a>
+                        <a href="#">Money Management Tools</a>
+                        <a href="#">Taxes</a>
+                        <a href="#">Other Finance & Accounting</a>
+                    </div>
+                </div>
+                <div class="submenu">
+                        <a href="#">Personal Development</a>
+                        <div class="submenu-content">
+                        <a href="#">Personal Transformation</a>
+                        <a href="#">Personal Productivity</a>
+                        <a href="#">Leadership</a>
+                        <a href="#">Career Development</a>
+                        <a href="#">Parenting & Relationships</a>
+                        <a href="#">Hapiness</a>
+                        <a href="#">Esoteric Practices</a>
+                        <a href="#">Religion & Spirituality</a>
+                        <a href="#">Personal Brand Building</a>
+                        <a href="#">Creativity</a>
+                        <a href="#">Influence</a>
+                        <a href="#">Self Esteem & Confidence</a>
+                        <a href="#">Stress Management</a>
+                        <a href="#">Memory & Study Skills</a>
+                        <a href="#">Motivation</a>
+                    </div>
+                </div>
+                <div class="submenu">
+                        <a href="#">Design</a>
+                        <div class="submenu-content">
+                        <a href="#">Web Design</a>
+                        <a href="#">Graphic Design & Illustration</a>
+                        <a href="#">Design Tools</a>
+                        <a href="#">User Experience Design</a>
+                        <a href="#">Game Design</a>
+                        <a href="#">3D & Animation</a>
+                        <a href="#">Fashion Design</a>
+                        <a href="#">Architectural Design</a>
+                        <a href="#">Interior Design</a>
+                        <a href="#">Other Design</a>
+                    </div>
+                </div>
+                <div class="submenu">
+                        <a href="#">Marketing</a>
+                        <div class="submenu-content">
+                        <a href="#">Digital Marketing</a>
+                        <a href="#">Search Engine Optimization</a>
+                        <a href="#">Social Media Marketing</a>
+                        <a href="#">Branding</a>
+                        <a href="#">Marketing Fundamentals</a>
+                        <a href="#">Marketing Analytics & Automation</a>
+                        <a href="#">Public Relations</a>
+                        <a href="#">Paid Advertising</a>
+                        <a href="#">Video & Mobile Marketing</a>
+                        <a href="#">Content Marketing</a>
+                        <a href="#">Growth Hacking</a>
+                        <a href="#">Affiliate Marketing</a>
+                        <a href="#">Product Marketing</a>
+                        <a href="#">Other Marketing</a>
+                    </div>
+                </div>
+                <div class="submenu">
+                        <a href="#">Lifestyle</a>
+                        <div class="submenu-content">
+                        <a href="#">Arts & Crafts </a>
+                        <a href="#">Beauty & Makeup</a>
+                        <a href="#">Esoteric Practices</a>
+                        <a href="#">Food & Beverage</a>
+                        <a href="#">Gaming</a>
+                        <a href="#">Home Improvement & Gardening</a>
+                        <a href="#">Pet Care & Training</a>
+                        <a href="#">Travel</a>
+                    </div>
+                </div>
+                <div class="submenu">
+                        <a href="#">Music</a>
+                        <div class="submenu-content">
+                        <a href="#">Instruments</a>
+                        <a href="#">Music Production</a>
+                        <a href="#">Music Fundamentals</a>
+                        <a href="#">Vocal</a>
+                        <a href="#">Music Techniques</a>
+                        <a href="#">Music Software</a>
+                        <a href="#">Other Music</a>
+                    </div>
+                </div>
+                <div class="submenu">
+                        <a href="#">Health & Fitness</a>
+                        <div class="submenu-content">
+                        <a href="#">Fitness</a>
+                        <a href="#">General Health</a>
+                        <a href="#">Sports</a>
+                        <a href="#">Nutrition & Diet</a>
+                        <a href="#">Yoga</a>
+                        <a href="#">Mental Health</a>
+                        <a href="#">Martial Arts & Self Defense</a>
+                        <a href="#">Safety & First Aid</a>
+                        <a href="#">Dance</a>
+                        <a href="#">Meditation</a>
+                    </div>
+                </div>
+                <div class="submenu">
+                        <a href="#">Teaching & Academics</a>
+                        <div class="submenu-content">
+                        <a href="#">Engineering</a>
+                        <a href="#">Humanities</a>
+                        <a href="#">Math</a>
+                        <a href="#">Science</a>
+                        <a href="#">Online Education</a>
+                        <a href="#">Social Science</a>
+                        <a href="#">Language Learning</a>
+                        <a href="#">Teacher Training</a>
+                        <a href="#">Test Prep</a>
+                        <a href="#">Other Teaching & Academics</a>
+                    </div>
+                </div>
+            </div>
+                </div>
+                <a href="C:\Users\ASUS\OneDrive\Desktop\Training Platform\Html\payment.html" class="payment-link">Payment</a>
+                <a href="C:\Users\ASUS\OneDrive\Desktop\Training Platform\Html\about.html">About Us</a>
+                <a href="C:\Users\ASUS\OneDrive\Desktop\Training Platform\Html\contact.html">Contact Us</a>
+                <a href="C:\Users\ASUS\OneDrive\Desktop\Training Platform\Html\log_in.html">Log in</a>
+                <a href="C:\Users\ASUS\OneDrive\Desktop\Training Platform\Html\sign_up.html">Sign up</a>
+</div>
+       </div>      
+        <div class="owl-carousel owl-theme">
+            <div class="item"><img src="C:\Users\ASUS\OneDrive\Desktop\Training Platform\Assets\pikaso_texttoimage_pixel-art-A-modern-and-sleek-home-section-showcasi.jpeg" alt="Image 1"></div>
+            <div class="item"><img src="C:\Users\ASUS\OneDrive\Desktop\Training Platform\Assets\pikaso_texttoimage_Candid-image-photography-natural-textures-highly-r (1).jpeg" alt="Image 2"></div>
+            <div class="item"><img src="C:\Users\ASUS\OneDrive\Desktop\Training Platform\Assets\pikaso_texttoimage_pixel-art-A-modern-and-sleek-home-section-showcasi (1).jpeg" alt="Image 3"></div>
+            <div class="item"><img src="C:\Users\ASUS\OneDrive\Desktop\Training Platform\Assets\pikaso_texttoimage_Candid-image-photography-natural-textures-highly-r.jpeg" alt="Image 4"></div>
+            <div class="item"><img src="C:\Users\ASUS\OneDrive\Desktop\Training Platform\Assets\pikaso_texttoimage_pixel-art-A-vibrant-home-section-for-SmartSkills-d.jpeg" alt="Image 5"></div>
+        </div>
+        <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Courses by Category</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <section class="courses-category-section">
+        <h2>Explore Courses by Category</h2>
+        <div class="flex-container">
+            <!-- Category Card 1 -->
+            <div class="category-card">
+                <div class="icon-container">
+                    <img src="C:\Users\ASUS\OneDrive\Desktop\Training Platform\Assets\124578.webp" alt="Cyber Security Icon">
+                </div>
+                <div class="category-content">
+                    <h3>Live Training</h3>
+                    <p>Experience real-time learning with expert-led live training sessions.</p>
+                    <a href="payment.html" class="payment-button">Enroll Now</a>
+                </div>
+                </div>
+                <div class="category-card">
+                <div class="icon-container">
+                        <img src="C:\Users\ASUS\OneDrive\Desktop\Training Platform\Assets\784552.webp" alt="Cyber Security Icon">
+                </div>
+                <div class="category-content">
+                    <h3>Webinar</h3>
+                    <p>Join our expert-led webinar to gain valuable insights and enhance your skills!</p>
+                    <a href="payment.html" class="payment-button">Enroll Now</a>
+                </div>
+                </div>
+                <div class="category-card">
+                    <div class="icon-container">
+                        <img src="C:\Users\ASUS\OneDrive\Desktop\Training Platform\Assets\59123.webp" alt="Cyber Security Icon">
+                    </div>
+                <div class="category-content">
+                    <h3>Stock Market</h3>
+                    <p>Master the art of investing and trading with our comprehensive Stock Market course.</p>
+                    <a href="payment.html" class="payment-button">Enroll Now</a>
+                </div>
+                </div>
+                <div class="category-card">
+                    <div class="icon-container">
+                    <img src="C:\Users\ASUS\OneDrive\Desktop\Training Platform\Assets\7-Benefits-That-Highlight-The-Importance-Of-Soft-Skills-In-The-Workplace.png" alt="Cyber Security Icon">
+                </div>
+                <div class="category-content">
+                    <h3>Soft Skills</h3>
+                    <p>Enhance your personal and professional growth with our comprehensive soft skills training, designed to boost communication, leadership, and teamwork.</p>
+                    <a href="payment.html" class="payment-button">Enroll Now</a>
+                </div>
+                </div>
+                <div class="category-card">
+                    <div class="icon-container">
+                        <img src="C:\Users\ASUS\OneDrive\Desktop\Training Platform\Assets\Microsoft-Office-Application-copy.png" alt="Cyber Security Icon">
+                    </div>
+                <div class="category-content">
+                    <h3>MS Office</h3>
+                    <p>Master MS Office with comprehensive training on Word, Excel, PowerPoint, and more.</p>
+                    <a href="payment.html" class="payment-button">Enroll Now</a>
+                </div>
+                </div>
+                <div class="category-card">
+                    <div class="icon-container">
+                        <img src="C:\Users\ASUS\OneDrive\Desktop\Training Platform\Assets\9139624_10.jpg" alt="Cyber Security Icon">
+                    </div>
+                <div class="category-content">
+                    <h3>Graphic Design</h3>
+                    <p>Master the art of visual communication with our Graphic Design course, from basics to advanced techniques.</p>
+                    <a href="payment.html" class="payment-button">Enroll Now</a>
+                </div>
+                </div>
+                <div class="category-card">
+                    <div class="icon-container">
+                        <img src="C:\Users\ASUS\OneDrive\Desktop\Training Platform\Assets\2207.i101.023.S.m004.c13.machine_learning_deep_learning_isometric_29_2_20.jpg" alt="Cyber Security Icon">
+                    </div>
+                <div class="category-content">
+                    <h3>Machine Learning</h3>
+                    <p>Master the fundamentals of machine learning to build intelligent systems and unlock data-driven insights.</p>
+                    <a href="payment.html" class="payment-button">Enroll Now</a>
+                </div>
+                </div>
+                <div class="category-card">
+                    <div class="icon-container">
+                        <img src="C:\Users\ASUS\OneDrive\Desktop\Training Platform\Assets\images.jpg" alt="Cyber Security Icon">
+                    </div>
+                <div class="category-content">
+                        <h3>Digital Marketing</h3>
+                        <p>Master the art of digital marketing to drive online success and engagement.</p>
+                        <a href="payment.html" class="payment-button">Enroll Now</a>
+                </div>
+                </div>
+                <div class="category-card">
+                    <div class="icon-container">
+                        <img src="C:\Users\ASUS\OneDrive\Desktop\Training Platform\Assets\images (1).jpg" alt="Cyber Security Icon">
+                    </div>
+                <div class="category-content">
+                    <h3>Software Programming</h3>
+                    <p>Learn the fundamentals of software programming to build robust and scalable applications.</p>
+                    <a href="payment.html" class="payment-button">Enroll Now</a>
+                </div>
+                </div>
+                <div class="category-card">
+                    <div class="icon-container">
+                        <img src="C:\Users\ASUS\OneDrive\Desktop\Training Platform\Assets\5566201_2_10.jpg" alt="Cyber Security Icon">
+                    </div>
+                <div class="category-content">
+                    <h3>Cyber Security</h3>
+                    <p>Gain essential skills to protect digital assets and safeguard against cyber threats.</p>
+                    <a href="payment.html" class="payment-button">Enroll Now</a>
+                </div>
+                </div>
+                <div class="category-card">
+                    <div class="icon-container">
+                        <img src="C:\Users\ASUS\OneDrive\Desktop\Training Platform\Assets\images (2).jpg" alt="Cyber Security Icon">
+                    </div>
+                <div class="category-content">
+                    <h3>Ethical Hacking</h3>
+                    <p>Explore ethical hacking techniques to identify and address security vulnerabilities before malicious hackers do.</p>
+                    <a href="payment.html" class="payment-button">Enroll Now</a>
+                </div>
+                </div>
+                <div class="category-card">
+                    <div class="icon-container">
+                        <img src="C:\Users\ASUS\OneDrive\Desktop\Training Platform\Assets\25289_2_5.jpg" alt="Cyber Security Icon">
+                    </div>
+                <div class="category-content">
+                        <h3>Data Analytics</h3>
+                        <p>Harness data to make informed decisions and uncover actionable insights.</p>
+                        <a href="payment.html" class="payment-button">Enroll Now</a>
+                </div>
+                </div>
+    </section>
+    <section class="courses-by-languages">
+        <h2>Courses by Language</h2>
+        <div class="languages-container">
+            <!-- Language Card 1 -->
+            <div class="language-card">
+                <img src="C:\Users\ASUS\OneDrive\Desktop\Training Platform\Assets\stock-vector-design-concept-of-word-english-website-banner-1043962963.jpg" alt="English">
+                <h3>English</h3>
+                <p>Explore the power of JavaScript for building interactive web applications.</p>
+            </div>
+            <!-- Language Card 2 -->
+            <div class="language-card">
+                <img src="C:\Users\ASUS\OneDrive\Desktop\Training Platform\Assets\Hindi.svg.png" alt="Hindi">
+                <h3>Hindi</h3>
+                <p>Learn Python for data science, machine learning, and general-purpose programming.</p>
+            </div>
+            <div class="language-card">
+                <img src="C:\Users\ASUS\OneDrive\Desktop\Training Platform\Assets\unnamed.png" alt="Marathi">
+                <h3>Marathi</h3>
+                <p>Develop robust, high-performance applications using Java's extensive framework.</p>
+            </div>
+            <div class="language-card">
+                <img src="C:\Users\ASUS\OneDrive\Desktop\Training Platform\Assets\tamil-golden-traditional-border-background-260nw-2416118323.webp" alt="Tamil">
+                <h3>Tamil</h3>
+                <p>Get to know Ruby for elegant and efficient web development with Ruby on Rails.</p>
+            </div>
+        </div>
+    </section>
+    <section class="career-growth-courses">
+        <h2>Courses for Career Growth</h2>
+        <div class="courses-container">
+            <!-- Career Growth Course 1 -->
+            <div class="course-card">
+                <img src="C:\Users\ASUS\OneDrive\Desktop\Training Platform\Assets\Leadership_skills_-_illustration.jpg" alt="Leadership">
+                <h3>Leadership Skills</h3>
+                <p>Develop essential leadership skills to advance in your career and lead teams effectively.</p>
+                <a href="payment.html" class="payment-button">Enroll Now</a>
+            </div>
+            <!-- Career Growth Course 2 -->
+            <div class="course-card">
+                <img src="C:\Users\ASUS\OneDrive\Desktop\Training Platform\Assets\images (3).jpg" alt="Communication">
+                <h3>Effective Communication</h3>
+                <p>Enhance your communication skills for better interpersonal interactions and professional growth.</p>
+                <a href="payment.html" class="payment-button">Enroll Now</a>
+            </div>
+            <!-- Career Growth Course 3 -->
+            <div class="course-card">
+                <img src="C:\Users\ASUS\OneDrive\Desktop\Training Platform\Assets\download.jpg" alt="Project Management">
+                <h3>Project Management</h3>
+                <p>Learn project management techniques to successfully plan, execute, and close projects.</p>
+                <a href="payment.html" class="payment-button">Enroll Now</a>
+            </div>
+            <!-- Career Growth Course 4 -->
+            <div class="course-card">
+                <img src="C:\Users\ASUS\OneDrive\Desktop\Training Platform\Assets\Negotiation-Skills-Training.png" alt="Negotiation">
+                <h3>Negotiation Skills</h3>
+                <p>Master negotiation strategies to achieve favorable outcomes in both professional and personal scenarios.</p>
+                <a href="payment.html" class="payment-button">Enroll Now</a>
+            </div>
+            <!-- Add more course cards as needed -->
+        </div>
+    </section> 
+    <section class="students-working-at">
+        <h2>Our Learners work at</h2>
+        <div class="companies-container">
+            <div class="company-card">
+                <img src="C:\Users\ASUS\OneDrive\Desktop\Training Platform\Assets\images (4).jpg" alt="Company 1 Logo">
+                <p>John Doe - Senior Developer at Google</p>
+            </div>
+            <div class="company-card">
+                <img src="C:\Users\ASUS\OneDrive\Desktop\Training Platform\Assets\working-woman-clothes.jpg" alt="Company 2 Logo">
+                <p>Jane Smith - Marketing Specialist at Facebook</p>
+            </div>
+            <div class="company-card">
+                <img src="C:\Users\ASUS\OneDrive\Desktop\Training Platform\Assets\portrait-successful-business-woman-white-background-professional-109290811.webp" alt="Company 3 Logo">
+                <p>Emily Johnson - Data Scientist at Amazon</p>
+            </div>
+            <div class="company-card">
+                <img src= "C:\Users\ASUS\OneDrive\Desktop\Training Platform\Assets\businessman-isolated-illustration-ai-generative-free-photo.jpg" alt="Company 4 Logo">
+                <p>Michael Brown - UX Designer at Adobe</p>
+            </div>
+        </div>
+    </section>
+    <section class="testimonials">
+        <h2>What People Say About Us</h2>
+        <div class="testimonials-container">
+            <div class="testimonial-card">
+                <p>"SmartSkills has truly transformed my career. The courses are comprehensive and the support is fantastic! "</p>
+                <div class="testimonial-author">
+                    <img src="C:\Users\ASUS\OneDrive\Desktop\Training Platform\Assets\images (5).jpg" alt="Profile Picture 1">
+                    <div>
+                        <h4>Harvey Leon</h4>
+                        <p>Software Developer</p>
+                    </div>
+                </div>
+            </div>
+            <div class="testimonial-card">
+                <p>"I gained valuable skills through SmartSkills' training programs. The practical knowledge has been incredibly beneficial for my job."</p>
+                <div class="testimonial-author">
+                    <img src="C:\Users\ASUS\OneDrive\Desktop\Training Platform\Assets\dafdf25168edcb2f0e1d8702797946cc.jpg" alt="Profile Picture 2">
+                    <div>
+                        <h4>Celia Adler</h4>
+                        <p>Marketing Specialist</p>
+                    </div>
+                </div>
+            </div>
+            <div class="testimonial-card">
+                <p>"Excellent courses with up-to-date content. The instructors are knowledgeable and the learning experience is top-notch."</p>
+                <div class="testimonial-author">
+                    <img src="C:\Users\ASUS\OneDrive\Desktop\Training Platform\Assets\b13ca305487326d44135fe713b30e865.jpg" alt="Profile Picture 3">
+                    <div>
+                        <h4>Britteny Cooper</h4>
+                        <p>Data Analyst</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>    
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-section about">
+                <h3>About Us</h3>
+                <p>SmartSkills is dedicated to providing high-quality training and resources to help individuals and businesses thrive. Our mission is to offer a diverse range of courses and programs to enhance skills and advance careers.</p>
+            </div>
+            <div class="footer-section links">
+                <h3>Quick Links</h3>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="#">Courses</a></li>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="contact.html">Contact Us</a></li>
+                    <li><a href="#">Privacy Policy</a></li>
+                    <li><a href="#">Terms of Service</a></li>
+                </ul>
+            </div>
+            <div class="footer-section contact">
+                <h3>Contact Us</h3>
+                <p>Email: <a href="mailto:info@smartskills.com">info@smartskills.com</a></p>
+                <p>Phone: +1 234 567 890</p>
+                <p>Address: 123 Learning Lane, Skill City, SC 12345</p>
+            </div>
+            <div class="footer-section social">
+                <h3>Follow Us</h3>
+                <a href="#" class="social-icon"><img src="C:\Users\ASUS\OneDrive\Desktop\Training Platform\Assets\f79920f4cb34986684e29df42ec0cebe.jpg" alt="Facebook"></a>
+                <a href="#" class="social-icon"><img src="C:\Users\ASUS\OneDrive\Desktop\Training Platform\Assets\images (1).png" alt="Twitter"></a>
+                <a href="#" class="social-icon"><img src="C:\Users\ASUS\OneDrive\Desktop\Training Platform\Assets\circle-linkedin-512.webp" alt="LinkedIn"></a>
+                <a href="#" class="social-icon"><img src="C:\Users\ASUS\OneDrive\Desktop\Training Platform\Assets\Instagram_logo_2022.svg.webp" alt="Instagram"></a>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2024 SmartSkills. All rights reserved.</p>
+        </div>
+    </footer>    
+       
+    
+        </body>
+</html>
